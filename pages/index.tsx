@@ -1,14 +1,12 @@
 import Head from "next/head";
 
 import { Button } from "./styles";
-{
-}
 
 const Home: React.FC = () => {
   return (
     <div>
       <Head>
-        <title>Create Next Apps</title>
+        <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div>Teste</div>
