@@ -1,6 +1,5 @@
 module.exports = {
   "**/*.ts?(x)": () => "yarn type-check",
-  "**/*.(ts|js)?(x)": (filenames) => `yarn lint:ts:fix ${filenames.join(" ")}`,
-  "**/*.styles.(ts)": (filenames) =>
-    `yarn lint:styles:fix ${filenames.join(" ")}`,
+  "**/*.(ts|js)?(x)": () => `yarn lint:ts:fix `,
+  "**/*.styles.(ts)": () => `yarn lint:styles:fix`,
 };
