@@ -1,12 +1,12 @@
 import Head from "next/head";
 
-import { Button } from "./styles";
+import { Button } from "./index.styles";
 
 const Home: React.FC = () => {
   return (
     <div>
       <Head>
-        <title>Create Next App</title>
+        <title>Create Next Apps</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div>Teste</div>
