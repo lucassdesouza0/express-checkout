@@ -1,16 +1,34 @@
 import Head from "next/head";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
-import { Button } from "./index.styles";
+import { fetchProducts, ProductProps } from "services/products";
 
-const Home: React.FC = () => {
+import Header from "components/organisms/Header/Header";
+import ProductsSection from "organisms/ProductsSection/ProductsSection";
+interface HomeProps {
+  products: ProductProps[];
+}
+
+export async function getStaticProps({ locale }: any) {
+  const products = await fetchProducts();
+
+  return {
+    props: {
+      products,
+      ...(await serverSideTranslations(locale, ["common", "price"])),
+    },
+  };
+}
+
+const Home = ({ products }: HomeProps) => {
   return (
-    <div>
+    <>
       <Head>
-        <title>Create Next App s</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Your Dog's Store</title>
       </Head>
-      <div>Teste</div>
-    </div>
+      <Header />
+      <ProductsSection products={products} />
+    </>
   );
 };
 
