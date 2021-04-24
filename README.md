@@ -1,34 +1,86 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Barkyn Challenge
+
+## Stack
+
+- [Typescript](https://www.typescriptlang.org/)
+- [React](https://facebook.github.io/react)
+- [Nextjs](https://nextjs.org/) with SSR and API Routes
+- [SWR](https://github.com/vercel/swr)
+- State Management with [Context API](https://pt-br.reactjs.org/docs/context.html)
+- UI Based on Atomic Design
+- Loading Transitions [react-loading-skeleton](react-loading-skeleton)
+- [Emotion](https://emotion.sh/)
+- [ESlint](https://github.com/typescript-eslint/typescript-eslint#readme)
+- [Stylelint](https://github.com/stylelint/stylelint)
+- [Prettier](https://prettier.io/)
+- [Testing-Library](https://testing-library.com/)
+- [Jest](https://jestjs.io/)
+- [Formik](https://formik.org/)
+- [Yarn](https://yarnpkg.com/en/docs/install)
+- Git Hooks with [Husky](https://github.com/typicode/husky)
 
 ## Getting Started
 
-First, run the development server:
+#### Clone the repository:
 
 ```bash
-npm run dev
-# or
+git clone git@github.com:lucassdesouza0/express-checkout.git
+cd express-checkout
+```
+
+#### Install dependencies:
+
+```bash
+yarn
+```
+
+## Running Locally
+
+```bash
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Running in Production
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+```bash
+yarn start
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## Building for Production
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+```bash
+yarn build
+```
 
-## Learn More
+## Lint
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+# lint ts code
+yarn lint:ts
+# lint and fix ts code
+yarn lint:ts:fix
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+# lint css code
+yarn lint:css
+#lint and fix css code
+yarn lint:css:fix
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Test
 
-## Deploy on Vercel
+```bash
+# run all tests
+yarn test
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+# run all tests and watch for changes
+yarn test:watch
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```bash
+# test coverage reports
+yarn test:coverage
+```

@@ -1,7 +1,7 @@
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 import CheckoutSection from "organisms/CheckoutSection/CheckoutSection";
-import Header from "organisms/Header/Header";
+import Header from "molecules/Header/Header";
 
 interface CheckoutProps {}
 

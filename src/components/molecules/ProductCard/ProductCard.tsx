@@ -17,7 +17,7 @@ interface ProductCardProps {
 
 const ProductCard = ({ product }: ProductCardProps) => {
   const router = useRouter();
-  const { t } = useTranslation("common");
+  const { t, ready } = useTranslation("common", { useSuspense: true });
   const { productsContext, setProductsContext } = useContext(
     ProductContext
   ) as ContextType;
@@ -34,7 +34,7 @@ const ProductCard = ({ product }: ProductCardProps) => {
 
   return (
     <Card
-      data-testid="card"
+      data-testid="product-card"
       aria-labelledby="product-name"
       defaultChecked={selected}
     >

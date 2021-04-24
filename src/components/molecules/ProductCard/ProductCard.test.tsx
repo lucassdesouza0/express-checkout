@@ -1,16 +1,17 @@
 import React from "react";
-import { render, screen } from "@testing-library/react";
+import { screen, render } from "@testing-library/react";
 import "@testing-library/jest-dom/extend-expect";
+import testRender from "../../../tests/render";
 
-import mock from "../../../tests/mocks/product";
+import mock from "../../../tests/__mocks__/product";
 
 import ProductCard from "./ProductCard";
 
 describe("<ProductCard />", () => {
   test("it should mount", () => {
-    render(<ProductCard product={mock}></ProductCard>);
+    testRender(<ProductCard product={mock}></ProductCard>);
 
-    const card = screen.getByTestId("Card");
+    const card = screen.getByTestId("product-card");
 
     expect(card).toBeInTheDocument();
   });

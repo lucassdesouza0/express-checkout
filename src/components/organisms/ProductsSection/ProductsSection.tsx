@@ -11,7 +11,7 @@ import { Section } from "./ProductsSection.styles";
 import { useEffect } from "react";
 
 const ProductsSection = ({ products }: ContextProps) => {
-  const { t } = useTranslation("common");
+  const { t, ready } = useTranslation("common");
   const { productsContext, setProductsContext } = useContext(
     ProductContext
   ) as ContextType;

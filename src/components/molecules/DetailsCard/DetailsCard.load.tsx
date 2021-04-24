@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Skeleton from "react-loading-skeleton";
 
 import { Card, Details } from "./DetailsCard.styles";

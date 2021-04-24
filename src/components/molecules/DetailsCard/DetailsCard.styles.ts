@@ -27,4 +27,8 @@ export const Shipping = styled("div")`
     margin: none;
     font-weight: 500;
   }
+
+  ul {
+    list-style: none;
+  }
 `;

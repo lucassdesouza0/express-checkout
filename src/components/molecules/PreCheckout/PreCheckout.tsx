@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from "react";
+import React from "react";
 import { useTranslation } from "next-i18next";
 
 import SectionHeader from "atoms/SectionHeader/SectionHeader";

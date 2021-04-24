@@ -22,7 +22,6 @@ const Form = () => {
   const { productsContext, setProductsContext } = useContext(
     ProductContext
   ) as ContextType;
-  const router = useRouter();
 
   const initialValues: FormValuesProps = {
     name: "",
@@ -53,31 +52,26 @@ const Form = () => {
             <Field name="email" type="email" />
             {errors.email && touched.email ? <div>{errors.email}</div> : null}
             <label>address</label>
-            <Field name="address" type="address" />
+            <Field name="address" type="text" />
             {errors.address && touched.address ? (
               <div>{errors.address}</div>
             ) : null}
             <label>postalCode</label>
-            <Field name="postalCode" type="postalCode" />
+            <Field name="postalCode" type="number" />
             {errors.postalCode && touched.postalCode ? (
               <div>{errors.postalCode}</div>
             ) : null}
             <label>country</label>
-            <Field name="country" type="country" />
+            <Field name="country" type="text" />
             {errors.country && touched.country ? (
               <div>{errors.country}</div>
             ) : null}
             <label>phone</label>
-            <Field name="phone" type="phone" />
+            <Field name="phone" type="tel" />
             {errors.phone && touched.phone ? <div>{errors.phone}</div> : null}
 
             {!productsContext?.product?.shipping && (
               <Button type="submit">{t("confirm")}</Button>
-            )}
-            {productsContext?.product?.shipping && (
-              <Button type="button" onClick={() => router.push("success")}>
-                {t("close")}
-              </Button>
             )}
           </SForm>
         )}

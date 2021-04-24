@@ -3,7 +3,7 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 import fetchProducts, { ProductProps } from "services/products";
 
-import Header from "components/organisms/Header/Header";
+import Header from "molecules/Header/Header";
 import ProductsSection from "organisms/ProductsSection/ProductsSection";
 interface HomeProps {
   products: ProductProps[];

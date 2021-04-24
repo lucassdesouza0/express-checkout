@@ -3,6 +3,7 @@ module.exports = {
   env: {
     node: true,
     es6: true,
+    jest: true,
   },
   parserOptions: {
     ecmaVersion: 8,
@@ -42,12 +43,6 @@ module.exports = {
           },
         },
         react: { version: "detect" },
-      },
-      env: {
-        browser: true,
-        node: true,
-        es6: true,
-        jest: true,
       },
       extends: [
         "eslint:recommended",

@@ -26,7 +26,7 @@ const Selection = ({ product }: SelectionProps) => {
         product: {
           name: product?.name,
           variants: product?.variants,
-          datail: { size: size, price: price, isComplete: true },
+          datail: { size: size, price: price },
         },
         products: productsContext.products,
       });
@@ -35,7 +35,10 @@ const Selection = ({ product }: SelectionProps) => {
   function handleSizeChange(event: React.ChangeEvent<any>): void {
     const variant = variants?.[event.target.value];
 
-    variant && setSize(variant?.size) && setPrice(variant.price);
+    if (variant) {
+      setSize(variant?.size);
+      setPrice(variant?.price);
+    }
   }
 
   return (

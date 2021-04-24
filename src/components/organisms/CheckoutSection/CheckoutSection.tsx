@@ -23,17 +23,15 @@ const CheckoutSection = () => {
   const product = productsContext?.product;
 
   useEffect(() => {
-    if (!product) {
-      router.push("/");
-    }
-  }, [productsContext]);
+    !product && router.push("/");
+  }, []);
 
   return (
     <CheckoutContainer>
       <SectionHeader title={t("checkout-header")} />
 
       <Section>
-        <Form />
+        {!productsContext?.product?.shipping && <Form />}
         <DetailsCard />
       </Section>
     </CheckoutContainer>

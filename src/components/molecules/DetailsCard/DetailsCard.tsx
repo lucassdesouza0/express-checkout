@@ -8,9 +8,12 @@ import DetailsCardLoad from "./DetailsCard.load";
 
 import { Card, Details, Shipping } from "./DetailsCard.styles";
 import { useTranslation } from "next-i18next";
+import { useRouter } from "next/dist/client/router";
+import Button from "components/atoms/Button/Button";
 
 const DetailsCard = () => {
   const { t } = useTranslation("common");
+  const router = useRouter();
   const { productsContext, setProductsContext } = useContext(
     ProductContext
   ) as ContextType;
@@ -40,6 +43,11 @@ const DetailsCard = () => {
             </>
           )}
         </Shipping>
+        {productsContext?.product?.shipping && !productsContext?.isComplete && (
+          <Button type="button" onClick={() => router.push("success")}>
+            {t("close")}
+          </Button>
+        )}
       </Details>
     </Card>
   );

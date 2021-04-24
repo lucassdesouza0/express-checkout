@@ -18,10 +18,13 @@ const SuccessSection = () => {
   const product = productsContext?.product;
 
   useEffect(() => {
-    if (!product) {
-      router.push("/");
-    }
-  }, [productsContext]);
+    !product
+      ? router.push("/")
+      : setProductsContext({
+          ...productsContext,
+          isComplete: true,
+        });
+  }, []);
 
   return (
     <Section>

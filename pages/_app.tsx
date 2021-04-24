@@ -10,7 +10,6 @@ export const ProductContext = React.createContext({});
 export interface SelectedProductProps {
   size?: string;
   price?: string;
-  isComplete?: boolean;
 }
 
 export interface ProductProps {
@@ -35,6 +34,7 @@ export interface ContextProps {
       }[]
     | null;
   product?: ProductProps;
+  isComplete?: boolean;
 }
 
 export interface ContextType {
