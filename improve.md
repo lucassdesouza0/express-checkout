@@ -14,12 +14,18 @@
 - I was unable to complete the configuration of Redux together with Saga to manage the state and side effects of the application due to the SSR mechanism, it would be an improvement that I would make for the better separation of the business rule on the front end.
 
 - [**critical**] Some business rules are within components, which makes them bad to reuse.
-  Along with the addition of the saga library, I would export this entire business rule so as not to mix responsibilities
+  Along with the addition of the saga library, I would export this entire business rule so as not to mix responsibilities.
 
 ### Theming
 
-- It would be interesting to have a theme for application, controlling the visual differences by encapsulating some css properties for a better control of the final result
+- It would be interesting to have a theme for application, controlling the visual differences by encapsulating some css properties for a better control of the final result.
 
 ### Test Coverage
 
 - I tried to create the most critical and also the most diversified tests to better present my knowledge. But a next improvement would be to seek more complete testing coverage.
+
+### Form
+
+- A critical point to be addressed is the validation of the shipping form, treating the inputs so as not to accept incorrect data and also bringing visual feedback to the user.
+
+- Along with the validation it would be a good increment to use a zipcode api like [**ZipCodeBase**](https://zipcodebase.com/) for the automatic filling of the address information, avoiding errors and bringing practicality to the user.
