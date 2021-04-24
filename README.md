@@ -1,6 +1,6 @@
 # Barkyn Challenge
 
-[Folder Structure](https://github.com/lucassdesouza0/express-checkout/blob/master/structure.md) - [Was Done](https:/github.com/lucassdesouza0/express-checkout//blob/master/done.md) - [To Improve](https://github.com/lucassdesouza0/express-checkout/blob/master/improve.md)
+[Folder Structure](https://github.com/lucassdesouza0/express-checkout/blob/master/structure.md) - [Was Done](https://github.com/lucassdesouza0/express-checkout//blob/master/done.md) - [To Improve](https://github.com/lucassdesouza0/express-checkout/blob/master/improve.md)
 
 ## Stack
 
