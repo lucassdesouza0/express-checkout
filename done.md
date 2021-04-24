@@ -2,6 +2,10 @@
 
 [Readme](https://github.com/lucassdesouza0/express-checkout/#readme) - [Folder Structure](https://github.com/lucassdesouza0/express-checkout/blob/master/structure.md) - [To Improve](https://github.com/lucassdesouza0/express-checkout/blob/master/improve.md)
 
+### Typescript
+
+- I use Typescript in all the project to guarantee consistency;
+
 ### Pages
 
 - I created 3 pages following the steps of the challenge;
@@ -19,7 +23,6 @@
 ### Dev Experience
 
 - I use ESLint, Prettier and StyleLint to make shure that i am following the best code practices;
-- I use Typescript in all the project to guarantee consistency;
 
 ### i18n
 
