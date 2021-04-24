@@ -4,18 +4,17 @@ import mq from "utils/queries";
 
 export const FormSection = styled("div")`
   display: flex;
-  flex-direction: column;
+  flex-direction: column wrap;
+  justify-content: center;
   width: 100vw;
   padding: 10px;
+  box-shadow: 2px 2px 5px 5px #eee;
 `;
 
 export const SForm = styled("form")`
   display: flex;
-  flex-direction: column wrap;
-  justify-content: center;
-  align-content: center;
+  flex-direction: column;
   padding: 10px;
-  box-shadow: 2px 2px 5px 5px #eee;
 
   input {
     padding: 10px;

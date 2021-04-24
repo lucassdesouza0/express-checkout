@@ -1,17 +1,14 @@
-/* tslint:disable */
 import React, { useContext } from "react";
-import { Formik } from "formik";
+import { Field, Formik } from "formik";
 import { useTranslation } from "next-i18next";
 import { useRouter } from "next/router";
-import validation from "./validation";
 import { ContextType, ProductContext } from "pages/_app";
 
 import Button from "atoms/Button/Button";
-import fields from "components/molecules/Form/fields";
 
 import { FormSection, SForm, SField } from "./Form.styles";
 
-export interface FormValuesProps {
+interface FormValuesProps {
   name: string;
   email: string;
   address: string;
@@ -40,9 +37,6 @@ const Form = () => {
     <FormSection>
       <Formik
         initialValues={initialValues}
-        validate={(values) => {
-          validation(values);
-        }}
         onSubmit={(values, { setSubmitting }) => {
           setProductsContext({
             product: { shipping: { ...values }, ...productsContext.product },
@@ -50,31 +44,32 @@ const Form = () => {
           });
         }}
       >
-        {({
-          values,
-          errors,
-          touched,
-          handleChange,
-          handleSubmit,
-          isSubmitting,
-        }) => (
+        {({ errors, touched, handleSubmit }) => (
           <SForm onSubmit={handleSubmit}>
-            {fields.map((f, index) => {
-              const { type } = f;
-              const value = type;
-              return (
-                <SField key={`${f}-${index}`}>
-                  <label>{type}</label>
-                  <input
-                    type={type}
-                    name={type}
-                    value={value}
-                    onChange={handleChange}
-                  />
-                  {`errors.${type}` && `touched.${type}` && `errors${type}`}
-                </SField>
-              );
-            })}
+            <label>name</label>
+            <Field name="name" type="name" />
+            {errors.name && touched.name ? <div>{errors.name}</div> : null}
+            <label>email</label>
+            <Field name="email" type="email" />
+            {errors.email && touched.email ? <div>{errors.email}</div> : null}
+            <label>address</label>
+            <Field name="address" type="address" />
+            {errors.address && touched.address ? (
+              <div>{errors.address}</div>
+            ) : null}
+            <label>postalCode</label>
+            <Field name="postalCode" type="postalCode" />
+            {errors.postalCode && touched.postalCode ? (
+              <div>{errors.postalCode}</div>
+            ) : null}
+            <label>country</label>
+            <Field name="country" type="country" />
+            {errors.country && touched.country ? (
+              <div>{errors.country}</div>
+            ) : null}
+            <label>phone</label>
+            <Field name="phone" type="phone" />
+            {errors.phone && touched.phone ? <div>{errors.phone}</div> : null}
 
             {!productsContext?.product?.shipping && (
               <Button type="submit">{t("confirm")}</Button>
