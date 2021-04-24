@@ -1,5 +1,4 @@
 import fetch from "isomorphic-fetch";
-
 export interface ProductProps {
   name: string;
   variants: VariantProp[];
@@ -11,7 +10,8 @@ export interface VariantProp {
 }
 
 const fetchProducts = async (): Promise<ProductProps[] | null> => {
-  const productsUrl = `http://localhost:3000/api/products`;
+  const productsUrl = `${process.env.NEXT_URL}/api/products`;
+  console.log("productsUrl: ", productsUrl);
 
   try {
     const response = await fetch(productsUrl);
