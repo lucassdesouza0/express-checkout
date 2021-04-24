@@ -25,6 +25,7 @@ const Button = ({
       {...props}
       onClick={onClick}
       disabled={disabled}
+      data-testeid="button"
     >
       {children}
     </SButton>
