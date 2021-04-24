@@ -1,6 +1,14 @@
 {
     "h1": "A Loja do Seu Cão!",
+    "select": "selecionar",
     "buy": "comprar",
     "product-list-header": "Escolha primeiro a ração preferida do seu cão:",
-    "pre-checkout-header": "Agora, selecione a idade do seu cão, o tamanho da embalagem e a quantidade"
+    "pre-checkout-header": "Agora, selecione a idade do seu cão, o tamanho da embalagem e a quantidade",
+    "checkout-header": "Preencha Seus Sados de Envio",
+    "success-header": "Seu Pedido Está a Caminho!",
+    "packing-size": "Selecione o tamanho",
+    "shipping": "Ir para o envio",
+    "confirm": "confirmar informações",
+    "kart": "Fechar pedido",
+    "address": "endereço de entrega:"
 }

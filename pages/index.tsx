@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
-import { fetchProducts, ProductProps } from "services/products";
+import fetchProducts, { ProductProps } from "services/products";
 
 import Header from "components/organisms/Header/Header";
 import ProductsSection from "organisms/ProductsSection/ProductsSection";
@@ -9,12 +9,11 @@ interface HomeProps {
   products: ProductProps[];
 }
 
-export async function getStaticProps({ locale }: any) {
+export async function getStaticProps({ locale, ...props }: any) {
   const products = await fetchProducts();
-
   return {
     props: {
-      products,
+      products: products,
       ...(await serverSideTranslations(locale, ["common", "price"])),
     },
   };

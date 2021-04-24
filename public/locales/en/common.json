@@ -1,6 +1,14 @@
 {
     "h1": "Your Dog's Store!",
+    "select": "select",
     "buy": "buy",
     "product-list-header": "First Your Dog's Favorite Dry Dog Food:",
     "pre-checkout-header": "Now Please Select Your Dog's Age, The Packing Size and Quantity",
+    "checkout-header": "Fill in Your Shipping Details",
+    "success-header": "Your Order Is On Its Way!",
+    "packing-size": "Select a packing size",
+    "shipping": "Go To Shipping",
+    "confirm": "confirm information",
+    "close": "Close order",
+    "address": "delivery address:"
 }

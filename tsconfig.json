@@ -7,7 +7,6 @@
       "dom.iterable",
       "esnext"
     ],
-    "baseUrl": ".",
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
@@ -20,16 +19,30 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "preserve"
+    "jsx": "preserve",
+    "baseUrl": ".",
+    "paths": {
+      "assets/*": ["./src/assets/*"],
+      "styles/*": ["./src/styles/*"],
+      "utils/*": ["./src/utils/*"],
+      "components/*": ["./src/components/*"],
+      "atoms/*": ["./src/components/atoms/*"],
+      "molecules/*": ["./src/components/molecules/*"],
+      "organisms/*": ["./src/components/organisms/*"],
+      "services/*": ["./src/services/*"],
+      "hooks/*": ["./src/hooks/*"],
+      "context/*": ["./src/context/*"],
+    }
   },
   "include": [
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
+    "**/*.stories.tsx",
     "src",
     "@types",
   ],
   "exclude": [
     "node_modules"
-  ]
+  ],
 }
