@@ -1,6 +1,6 @@
 # Was Done
 
-[Readme](https://github.com/lucassdesouza0/express-checkout/) - [Folder Structure](https://github.com/lucassdesouza0/express-checkout/blob/master/structure.md) - [To Improve](https://github.com/lucassdesouza0/express-checkout/blob/master/improve.md)
+[Readme](https://github.com/lucassdesouza0/express-checkout/#readme) - [Folder Structure](https://github.com/lucassdesouza0/express-checkout/blob/master/structure.md) - [To Improve](https://github.com/lucassdesouza0/express-checkout/blob/master/improve.md)
 
 ### Pages
 

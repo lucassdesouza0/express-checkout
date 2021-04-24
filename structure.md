@@ -1,6 +1,6 @@
 ## Folder Structure
 
-[Readme](https://github.com/lucassdesouza0/express-checkout/) - [Was Done](https://github.com/lucassdesouza0/express-checkout/blob/master/done.md) - [To Improve](https://github.com/lucassdesouza0/express-checkout/blob/master/improve.md)
+[Readme](https://github.com/lucassdesouza0/express-checkout/#readme) - [Was Done](https://github.com/lucassdesouza0/express-checkout/blob/master/done.md) - [To Improve](https://github.com/lucassdesouza0/express-checkout/blob/master/improve.md)
 
 - pages
   - api - products (fake produtcts api)
