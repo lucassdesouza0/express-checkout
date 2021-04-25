@@ -1,0 +1,368 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ProductCard /> it should match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="css-1bf6dpu-List e1t1piff0"
+    data-testid="list"
+  >
+    <div
+      aria-labelledby="product-name"
+      class="css-zmijso-Card ek8h0p83"
+      data-testid="product-card"
+    >
+      <img
+        class="css-1ep1cpx-SImage e65m3ty0"
+        data-testid="image"
+        height="214"
+        src="https://images.prismic.io/barkyn/153c4252-8084-49b8-9931-3ec426cdd859_premium_box.png?auto=compress,format"
+        width="230"
+      />
+      <div
+        class="css-yf3tg6-Details ek8h0p82"
+      >
+        <p
+          class="css-hbd1xf-ProductName ek8h0p81"
+          id="product-name"
+        >
+          Dry Dog Food - Chicken
+        </p>
+        <div
+          class="css-1wmjec5-LowerPrice ek8h0p80"
+        />
+      </div>
+      <button
+        class="css-hhtkyx-Button enhitpr0"
+        name="button"
+        type="button"
+      >
+        <a
+          href="#pre-checkout"
+        >
+          select
+        </a>
+      </button>
+    </div>
+    <div
+      aria-labelledby="product-name"
+      class="css-zmijso-Card ek8h0p83"
+      data-testid="product-card"
+    >
+      <img
+        class="css-1ep1cpx-SImage e65m3ty0"
+        data-testid="image"
+        height="214"
+        src="https://images.prismic.io/barkyn/153c4252-8084-49b8-9931-3ec426cdd859_premium_box.png?auto=compress,format"
+        width="230"
+      />
+      <div
+        class="css-yf3tg6-Details ek8h0p82"
+      >
+        <p
+          class="css-hbd1xf-ProductName ek8h0p81"
+          id="product-name"
+        >
+          Dry Dog Food - Lamb & Rice
+        </p>
+        <div
+          class="css-1wmjec5-LowerPrice ek8h0p80"
+        />
+      </div>
+      <button
+        class="css-hhtkyx-Button enhitpr0"
+        name="button"
+        type="button"
+      >
+        <a
+          href="#pre-checkout"
+        >
+          select
+        </a>
+      </button>
+    </div>
+    <div
+      aria-labelledby="product-name"
+      class="css-zmijso-Card ek8h0p83"
+      data-testid="product-card"
+    >
+      <img
+        class="css-1ep1cpx-SImage e65m3ty0"
+        data-testid="image"
+        height="214"
+        src="https://images.prismic.io/barkyn/153c4252-8084-49b8-9931-3ec426cdd859_premium_box.png?auto=compress,format"
+        width="230"
+      />
+      <div
+        class="css-yf3tg6-Details ek8h0p82"
+      >
+        <p
+          class="css-hbd1xf-ProductName ek8h0p81"
+          id="product-name"
+        >
+          Dry Dog Food - Vegetables
+        </p>
+        <div
+          class="css-1wmjec5-LowerPrice ek8h0p80"
+        />
+      </div>
+      <button
+        class="css-hhtkyx-Button enhitpr0"
+        name="button"
+        type="button"
+      >
+        <a
+          href="#pre-checkout"
+        >
+          select
+        </a>
+      </button>
+    </div>
+    <div
+      aria-labelledby="product-name"
+      class="css-zmijso-Card ek8h0p83"
+      data-testid="product-card"
+    >
+      <img
+        class="css-1ep1cpx-SImage e65m3ty0"
+        data-testid="image"
+        height="214"
+        src="https://images.prismic.io/barkyn/153c4252-8084-49b8-9931-3ec426cdd859_premium_box.png?auto=compress,format"
+        width="230"
+      />
+      <div
+        class="css-yf3tg6-Details ek8h0p82"
+      >
+        <p
+          class="css-hbd1xf-ProductName ek8h0p81"
+          id="product-name"
+        >
+          Dry Dog Food - Sports
+        </p>
+        <div
+          class="css-1wmjec5-LowerPrice ek8h0p80"
+        />
+      </div>
+      <button
+        class="css-hhtkyx-Button enhitpr0"
+        name="button"
+        type="button"
+      >
+        <a
+          href="#pre-checkout"
+        >
+          select
+        </a>
+      </button>
+    </div>
+    <div
+      aria-labelledby="product-name"
+      class="css-zmijso-Card ek8h0p83"
+      data-testid="product-card"
+    >
+      <img
+        class="css-1ep1cpx-SImage e65m3ty0"
+        data-testid="image"
+        height="214"
+        src="https://images.prismic.io/barkyn/153c4252-8084-49b8-9931-3ec426cdd859_premium_box.png?auto=compress,format"
+        width="230"
+      />
+      <div
+        class="css-yf3tg6-Details ek8h0p82"
+      >
+        <p
+          class="css-hbd1xf-ProductName ek8h0p81"
+          id="product-name"
+        >
+          Dry Dog Food - Diet
+        </p>
+        <div
+          class="css-1wmjec5-LowerPrice ek8h0p80"
+        />
+      </div>
+      <button
+        class="css-hhtkyx-Button enhitpr0"
+        name="button"
+        type="button"
+      >
+        <a
+          href="#pre-checkout"
+        >
+          select
+        </a>
+      </button>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<ProductCard /> it should render the load version of the card 1`] = `
+<DocumentFragment>
+  <div
+    class="css-1bf6dpu-List e1t1piff0"
+    data-testid="list"
+  >
+    <div
+      aria-labelledby="product-name"
+      class="css-zmijso-Card ek8h0p83"
+      data-testid="card"
+    >
+      <span>
+        <span
+          class="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+          style="width: 230px; height: 214px;"
+        >
+          ‌
+        </span>
+      </span>
+      <div
+        class="css-yf3tg6-Details ek8h0p82"
+      >
+        <p
+          class="css-hbd1xf-ProductName ek8h0p81"
+          id="product-name"
+        >
+          <span>
+            <span
+              class="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+            >
+              ‌
+            </span>
+          </span>
+        </p>
+        <div
+          class="css-1wmjec5-LowerPrice ek8h0p80"
+        >
+          <span>
+            <span
+              class="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+            >
+              ‌
+            </span>
+          </span>
+        </div>
+      </div>
+      <button
+        class="css-hhtkyx-Button enhitpr0"
+        name="button"
+        type="button"
+      >
+        <span>
+          <span
+            class="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+          >
+            ‌
+          </span>
+        </span>
+      </button>
+    </div>
+    <div
+      aria-labelledby="product-name"
+      class="css-zmijso-Card ek8h0p83"
+      data-testid="card"
+    >
+      <span>
+        <span
+          class="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+          style="width: 230px; height: 214px;"
+        >
+          ‌
+        </span>
+      </span>
+      <div
+        class="css-yf3tg6-Details ek8h0p82"
+      >
+        <p
+          class="css-hbd1xf-ProductName ek8h0p81"
+          id="product-name"
+        >
+          <span>
+            <span
+              class="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+            >
+              ‌
+            </span>
+          </span>
+        </p>
+        <div
+          class="css-1wmjec5-LowerPrice ek8h0p80"
+        >
+          <span>
+            <span
+              class="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+            >
+              ‌
+            </span>
+          </span>
+        </div>
+      </div>
+      <button
+        class="css-hhtkyx-Button enhitpr0"
+        name="button"
+        type="button"
+      >
+        <span>
+          <span
+            class="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+          >
+            ‌
+          </span>
+        </span>
+      </button>
+    </div>
+    <div
+      aria-labelledby="product-name"
+      class="css-zmijso-Card ek8h0p83"
+      data-testid="card"
+    >
+      <span>
+        <span
+          class="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+          style="width: 230px; height: 214px;"
+        >
+          ‌
+        </span>
+      </span>
+      <div
+        class="css-yf3tg6-Details ek8h0p82"
+      >
+        <p
+          class="css-hbd1xf-ProductName ek8h0p81"
+          id="product-name"
+        >
+          <span>
+            <span
+              class="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+            >
+              ‌
+            </span>
+          </span>
+        </p>
+        <div
+          class="css-1wmjec5-LowerPrice ek8h0p80"
+        >
+          <span>
+            <span
+              class="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+            >
+              ‌
+            </span>
+          </span>
+        </div>
+      </div>
+      <button
+        class="css-hhtkyx-Button enhitpr0"
+        name="button"
+        type="button"
+      >
+        <span>
+          <span
+            class="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+          >
+            ‌
+          </span>
+        </span>
+      </button>
+    </div>
+  </div>
+</DocumentFragment>
+`;

@@ -5,24 +5,24 @@ import testRender from "../../../tests/render";
 
 import mock from "../../../tests/__mocks__/product";
 
-import ProductCard from "./ProductCard";
+import VariantsCard from "./VariantsCard";
 
 describe("<ProductCard />", () => {
   test("it should mount", () => {
-    testRender(<ProductCard product={mock}></ProductCard>);
+    testRender(<VariantsCard product={mock}></VariantsCard>);
 
-    const card = screen.getByTestId("product-card");
+    const card = screen.getAllByTestId("variants-card");
 
-    expect(card).toBeInTheDocument();
+    expect(card[0]).toBeInTheDocument();
   });
 
   test("it should render the load version of the card", () => {
-    const { asFragment } = render(<ProductCard></ProductCard>);
+    const { asFragment } = render(<VariantsCard />);
     expect(asFragment()).toMatchSnapshot();
   });
 
   test("it should match snapshot", () => {
-    const { asFragment } = render(<ProductCard product={mock}></ProductCard>);
+    const { asFragment } = render(<VariantsCard product={mock}></VariantsCard>);
     expect(asFragment()).toMatchSnapshot();
   });
 });

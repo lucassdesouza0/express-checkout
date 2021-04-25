@@ -9,10 +9,12 @@ import Image from "../../atoms/Image/Image";
 import Price from "../../atoms/Price/Price";
 import { ContextType, ProductContext } from "../../../../pages/_app";
 
+import ProductCardLoad from "./ProductCard.load";
+
 import { Card, Details, ProductName, LowerPrice } from "./ProductCard.styles";
 
 interface ProductCardProps {
-  product: ProductProps;
+  product?: ProductProps;
 }
 
 const ProductCard = ({ product }: ProductCardProps) => {
@@ -21,6 +23,8 @@ const ProductCard = ({ product }: ProductCardProps) => {
   const { productsContext, setProductsContext } = useContext(
     ProductContext
   ) as ContextType;
+
+  if (!product) return <ProductCardLoad />;
 
   const { name } = product;
   const [selected, setSelected] = useState(false);

@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button it should match snapshot 1`] = `
+<DocumentFragment>
+  <img
+    class="css-1ep1cpx-SImage e65m3ty0"
+    data-testid="image"
+    height="214"
+    src="https://images.prismic.io/barkyn/153c4252-8084-49b8-9931-3ec426cdd859_premium_box.png?auto=compress,format"
+    width="230"
+  />
+</DocumentFragment>
+`;

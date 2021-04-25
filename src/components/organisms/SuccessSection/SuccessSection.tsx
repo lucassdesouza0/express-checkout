@@ -29,7 +29,7 @@ const SuccessSection = () => {
   return (
     <Section>
       <SectionHeader title={t("success-header")} />
-      <DetailsCard />
+      <DetailsCard product={product} />
     </Section>
   );
 };

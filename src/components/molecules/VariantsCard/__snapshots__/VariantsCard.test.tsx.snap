@@ -1,0 +1,112 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ProductCard /> it should match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="css-1ooee9y-Card e1a1q5s70"
+    data-testid="variants-card"
+  >
+    <div
+      class="css-1px0wn7-Section eui42cl2"
+    >
+      <div
+        class="css-1l33m80-SelectionSection eui42cl1"
+      >
+        <label>
+          packing-size:
+        </label>
+        <select
+          class="css-1nbhqyd-Select eui42cl0"
+          name="ages"
+        >
+          <option
+            data-testid="select-option"
+            disabled=""
+            selected=""
+            value="sizes"
+          >
+            sizes
+          </option>
+          <option
+            data-testid="select-option-3kg"
+            label="3kg"
+            value="0"
+          >
+            3kg
+          </option>
+          <option
+            data-testid="select-option-10kg"
+            label="10kg"
+            value="1"
+          >
+            10kg
+          </option>
+          <option
+            data-testid="select-option-20kg"
+            label="20kg"
+            value="2"
+          >
+            20kg
+          </option>
+        </select>
+      </div>
+    </div>
+    <button
+      class="css-hhtkyx-Button enhitpr0"
+      name="button"
+      type="button"
+    >
+      <a
+        href="/checkout"
+      >
+        kart
+      </a>
+    </button>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<ProductCard /> it should render the load version of the card 1`] = `
+<DocumentFragment>
+  <div
+    class="css-1ooee9y-Card e1a1q5s70"
+    data-testid="variants-card"
+  >
+    <div
+      class="css-1px0wn7-Section eui42cl2"
+    >
+      <div
+        class="css-1l33m80-SelectionSection eui42cl1"
+      >
+        <label>
+          packing-size:
+        </label>
+        <select
+          class="css-1nbhqyd-Select eui42cl0"
+          name="ages"
+        >
+          <option
+            data-testid="select-option"
+            disabled=""
+            selected=""
+            value="sizes"
+          >
+            sizes
+          </option>
+        </select>
+      </div>
+    </div>
+    <button
+      class="css-hhtkyx-Button enhitpr0"
+      name="button"
+      type="button"
+    >
+      <a
+        href="/checkout"
+      >
+        kart
+      </a>
+    </button>
+  </div>
+</DocumentFragment>
+`;

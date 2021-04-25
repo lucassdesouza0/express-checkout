@@ -1,20 +1,20 @@
-# Was Done
+# Done
 
 [Readme](https://github.com/lucassdesouza0/express-checkout/#readme) - [Folder Structure](https://github.com/lucassdesouza0/express-checkout/blob/master/structure.md) - [To Improve](https://github.com/lucassdesouza0/express-checkout/blob/master/improve.md)
 
 ### Typescript
 
-- I use Typescript in all the project to guarantee consistency;
+- In order to guarantee consistency in all the project I used Typescript ;
 
 ### Pages
 
 - I created 3 pages following the steps of the challenge;
-- I used the SSR feature to load the translation provider and fetch the api data;
+- The SSR feature was used to load the translation provider and fetch the api data;
 
 ### Data
 
-- I used the nextjs api routes feature to create an fake api to provide products data;
-- I used the swr library to fetch and revalidate data from the api;
+- to provide products data I used the nextjs api routes feature to create a fake api;
+- I used the SWR library to fetch and revalidate data from the api;
 
 ### State
 
@@ -22,16 +22,16 @@
 
 ### Dev Experience
 
-- I use ESLint, Prettier and StyleLint to make shure that i am following the best code practices;
+- I used ESLint, Prettier and StyleLint to make shure that I'm following the best code practices;
 
 ### i18n
 
-- I created an i18n provider for the application, to make shure that the user is receiving the localized information;
+- I created an i18n provider for the application to make shure that the user is receiving the localized information;
 
 ### UI
 
-- Despite being simple, I tried to create reusable UI Components following the atomic design pattern;
+- Despite being simple, I tried to create reusable UI Components following the Atomic Design pattern;
 
 ### Tests
 
-- I use Jest with Testing Library to run all the unit tests;
+- I used Jest with Testing Library to run all the unit tests;
