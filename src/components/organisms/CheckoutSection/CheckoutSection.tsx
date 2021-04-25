@@ -18,15 +18,19 @@ const CheckoutSection = () => {
   const { productsContext, setProductsContext } = useContext(
     ProductContext
   ) as ContextType;
-  let product;
+
+  useEffect(() => {}, [productsContext]);
 
   return (
     <CheckoutContainer>
       <SectionHeader title={t("checkout-header")} />
 
       <Section>
-        {!productsContext?.product?.shipping && <Form />}
-        <DetailsCard product={productsContext.product} />
+        {!productsContext?.product?.shipping &&
+          !productsContext?.isComplete && <Form />}
+        {productsContext?.product && (
+          <DetailsCard product={productsContext.product} />
+        )}
       </Section>
     </CheckoutContainer>
   );
