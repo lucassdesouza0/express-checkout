@@ -23,7 +23,7 @@ const CheckoutSection = () => {
   const product = productsContext?.product;
 
   useEffect(() => {
-    !product && router.push("/");
+    setTimeout(() => !product && router.push("/"), 2000);
   }, []);
 
   return (
