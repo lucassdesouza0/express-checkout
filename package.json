@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "predev": "rm .env.production && cp .env.example .env.local",
     "dev": "next dev",
-    "prebuild": "cp .env.production .env",
     "build": "next build",
     "start": "next start",
     "test": "jest --silent",
@@ -15,7 +15,7 @@
     "lint:ts:fix": "eslint --ext js,jsx,ts,tsx --fix",
     "lint:styles": "stylelint '**/*.styles.{ts, tsx}'",
     "lint:styles:fix": "stylelint '**/*.styles.{ts, tsx}' --fix",
-    "postinstall": "husky install && cp .env.example .env.local"
+    "postinstall": "husky install"
   },
   "dependencies": {
     "@emotion/react": "^11.1.5",
