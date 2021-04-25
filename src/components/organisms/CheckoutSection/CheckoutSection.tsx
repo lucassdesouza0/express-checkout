@@ -22,9 +22,7 @@ const CheckoutSection = () => {
 
   const product = productsContext?.product;
 
-  useEffect(() => {
-    setTimeout(() => !product && router.push("/"), 2000);
-  }, []);
+  useEffect(() => {}, []);
 
   return (
     <CheckoutContainer>

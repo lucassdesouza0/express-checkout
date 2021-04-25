@@ -18,7 +18,6 @@ const Selection = ({ product }: SelectionProps) => {
   const { t } = useTranslation("common");
 
   const variants = product?.variants;
-  console.log("variants: ", variants);
 
   useEffect(() => {
     price &&
@@ -40,8 +39,6 @@ const Selection = ({ product }: SelectionProps) => {
       setSize(variant?.size);
       setPrice(variant?.price);
     }
-    console.log("variant?.price: ", variant?.price);
-    console.log(price);
   }
 
   return (
