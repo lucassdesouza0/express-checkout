@@ -3,7 +3,7 @@
     "select": "select",
     "buy": "buy",
     "product-list-header": "First Your Dog's Favorite Dry Dog Food:",
-    "pre-checkout-header": "Now Please Select Your Dog's Age, The Packing Size and Quantity",
+    "pre-checkout-header": "Now Please Select The Packing Size",
     "checkout-header": "Fill in Your Shipping Details",
     "success-header": "Your Order Is On Its Way!",
     "packing-size": "Select a packing size",
