@@ -1,0 +1,103 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button it should match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="css-1jjeh5-PreCheckoutContainer erhl34w1"
+    data-testid="precheckout-section"
+  >
+    <h2
+      class="css-14jgswk-Header e2we4hg0"
+    >
+      pre-checkout-header
+    </h2>
+    <div
+      class="css-1hnjv03-Section erhl34w0"
+    >
+      <div
+        class="css-1oarku0-Card e1ss9q3t3"
+        data-testid="details-card"
+      >
+        <img
+          class="css-1bpjr25-SImage e65m3ty0"
+          data-testid="image"
+          height="100"
+          src="https://images.prismic.io/barkyn/153c4252-8084-49b8-9931-3ec426cdd859_premium_box.png?auto=compress,format"
+          width="100"
+        />
+        <div
+          class="css-1lezaxk-Details e1ss9q3t2"
+        >
+          <p>
+            Dry Dog Food - Chicken
+          </p>
+          <div
+            class="css-sye7wj-Shipping e1ss9q3t0"
+          />
+        </div>
+      </div>
+      <div
+        class="css-1ooee9y-Card e1a1q5s70"
+        data-testid="variants-card"
+      >
+        <div
+          class="css-1px0wn7-Section eui42cl2"
+        >
+          <div
+            class="css-1l33m80-SelectionSection eui42cl1"
+          >
+            <label>
+              packing-size:
+            </label>
+            <select
+              class="css-1nbhqyd-Select eui42cl0"
+              name="ages"
+            >
+              <option
+                data-testid="select-option"
+                disabled=""
+                selected=""
+                value="sizes"
+              >
+                sizes
+              </option>
+              <option
+                data-testid="select-option-3kg"
+                label="3kg"
+                value="0"
+              >
+                3kg
+              </option>
+              <option
+                data-testid="select-option-10kg"
+                label="10kg"
+                value="1"
+              >
+                10kg
+              </option>
+              <option
+                data-testid="select-option-20kg"
+                label="20kg"
+                value="2"
+              >
+                20kg
+              </option>
+            </select>
+          </div>
+        </div>
+        <button
+          class="css-hhtkyx-Button enhitpr0"
+          name="button"
+          type="button"
+        >
+          <a
+            href="/checkout"
+          >
+            kart
+          </a>
+        </button>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

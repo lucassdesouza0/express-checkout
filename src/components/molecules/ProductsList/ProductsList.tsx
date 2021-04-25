@@ -9,7 +9,7 @@ import SectionHeader from "atoms/SectionHeader/SectionHeader";
 import { List } from "./ProductsList.styles";
 
 interface ProductsListProps {
-  products: ProductProps[] | null;
+  products?: ProductProps[] | null;
 }
 
 const ProductsList = ({ products }: ProductsListProps) => {

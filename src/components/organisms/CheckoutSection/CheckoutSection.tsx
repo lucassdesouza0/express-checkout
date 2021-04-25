@@ -32,7 +32,7 @@ const CheckoutSection = () => {
 
       <Section>
         {!productsContext?.product?.shipping && <Form />}
-        <DetailsCard />
+        <DetailsCard product={product} />
       </Section>
     </CheckoutContainer>
   );

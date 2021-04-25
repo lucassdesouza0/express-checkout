@@ -17,7 +17,7 @@ const VariantsCard = ({ product }: VariantsCardProps) => {
   const router = useRouter();
 
   return (
-    <Card>
+    <Card data-testid="variants-card">
       <Selection product={product} />
       <Button
         type="button"

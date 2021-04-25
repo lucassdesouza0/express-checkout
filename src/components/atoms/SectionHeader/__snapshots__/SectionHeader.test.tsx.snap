@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button it should match snapshot 1`] = `
+<DocumentFragment>
+  <h2
+    class="css-14jgswk-Header e2we4hg0"
+  >
+    Header Title
+  </h2>
+</DocumentFragment>
+`;

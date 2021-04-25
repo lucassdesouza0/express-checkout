@@ -18,6 +18,7 @@ const Selection = ({ product }: SelectionProps) => {
   const { t } = useTranslation("common");
 
   const variants = product?.variants;
+  console.log("variants: ", variants);
 
   useEffect(() => {
     price &&
@@ -39,6 +40,8 @@ const Selection = ({ product }: SelectionProps) => {
       setSize(variant?.size);
       setPrice(variant?.price);
     }
+    console.log("variant?.price: ", variant?.price);
+    console.log(price);
   }
 
   return (
@@ -46,11 +49,16 @@ const Selection = ({ product }: SelectionProps) => {
       <SelectionSection>
         <label>{t("packing-size")}:</label>
         <Select name="ages" onChange={handleSizeChange} defaultValue={"sizes"}>
-          <option value="sizes" disabled>
+          <option value="sizes" disabled data-testid="select-option">
             sizes
           </option>
           {variants?.map((a, index) => (
-            <option value={index} key={`${a}-${index}`}>
+            <option
+              label={a.size}
+              value={index}
+              key={`${a}-${index}`}
+              data-testid={`select-option-${a.size}`}
+            >
               {a.size}
             </option>
           ))}

@@ -1,6 +1,7 @@
 module.exports = {
   setupFilesAfterEnv: ["./jest.setup.js"],
   moduleNameMapper: {
+    "^pages/(.*)$": ["<rootDir>/pages/$1"],
     "^assets/(.*)$": ["<rootDir>/src/assets/$1"],
     "^styles/(.*)$": ["<rootDir>/src/styles/$1"],
     "^utils/(.*)$": ["<rootDir>/src/utils/$1"],
@@ -11,6 +12,11 @@ module.exports = {
     "^services/(.*)$": ["<rootDir>/src/services/$1"],
     "^hooks/(.*)$": ["<rootDir>/src/hooks/$1"],
     "^context/(.*)$": ["<rootDir>/src/context/$1"],
-    "\\.(css|less|sass|scss)$": ["<rootDir>/src/tests/__mocks__/styles.ts"]
+    "\\.(css|less|sass|scss)$": ["<rootDir>/src/tests/__mocks__/styles.ts"],
   },
+  collectCoverageFrom: [
+    "pages/**/*.{ts,jsx}",
+    "src/**/*.{ts,jsx}",
+    "!**/node_modules/**",
+  ],
 };

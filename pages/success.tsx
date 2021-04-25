@@ -1,6 +1,6 @@
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
-import Header from "molecules/Header/Header";
+import Header from "atoms/Header/Header";
 import SuccessSection from "organisms/SuccessSection/SuccessSection";
 
 interface SuccessProps {}

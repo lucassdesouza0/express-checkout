@@ -5,7 +5,7 @@ import SButton from "./Button.styles";
 interface ButtonProps {
   className?: string;
   type?: "button" | "submit" | "reset";
-  children: ReactNode | string;
+  children?: ReactNode | string;
   disabled?: boolean;
   onClick?: () => void;
 }
@@ -25,7 +25,7 @@ const Button = ({
       {...props}
       onClick={onClick}
       disabled={disabled}
-      data-testeid="button"
+      name="button"
     >
       {children}
     </SButton>

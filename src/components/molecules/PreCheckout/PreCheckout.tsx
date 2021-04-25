@@ -7,6 +7,7 @@ import VariantsCard from "molecules/VariantsCard/VariantsCard";
 import { ProductContext, ProductProps } from "pages/_app";
 
 import { PreCheckoutContainer, Section } from "./PreCheckout.styles";
+import { useEffect } from "react";
 
 export interface PreCheckoutProps {
   product?: ProductProps;
@@ -17,11 +18,13 @@ const PreCheckout = ({ product }: PreCheckoutProps) => {
 
   if (!product) return <></>;
 
+  useEffect(() => {}, [product]);
+
   return (
-    <PreCheckoutContainer>
+    <PreCheckoutContainer data-testid="precheckout-section">
       <SectionHeader title={t("pre-checkout-header")} />
       <Section>
-        <DetailsCard />
+        <DetailsCard product={product} />
         <VariantsCard product={product} />
       </Section>
     </PreCheckoutContainer>
