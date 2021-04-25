@@ -15,14 +15,10 @@ import {
 
 const CheckoutSection = () => {
   const { t } = useTranslation("common");
-  const router = useRouter();
   const { productsContext, setProductsContext } = useContext(
     ProductContext
   ) as ContextType;
-
-  const product = productsContext?.product;
-
-  useEffect(() => {}, []);
+  let product;
 
   return (
     <CheckoutContainer>
@@ -30,7 +26,7 @@ const CheckoutSection = () => {
 
       <Section>
         {!productsContext?.product?.shipping && <Form />}
-        <DetailsCard product={product} />
+        <DetailsCard product={productsContext.product} />
       </Section>
     </CheckoutContainer>
   );

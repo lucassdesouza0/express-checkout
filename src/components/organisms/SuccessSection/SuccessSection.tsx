@@ -10,12 +10,12 @@ import { Section } from "./SuccessSection.styles";
 
 const SuccessSection = () => {
   const { t } = useTranslation("common");
-  const router = useRouter();
   const { productsContext, setProductsContext } = useContext(
     ProductContext
   ) as ContextType;
 
   const product = productsContext?.product;
+  const isComplete = productsContext?.isComplete;
 
   useEffect(() => {
     product &&
@@ -28,7 +28,7 @@ const SuccessSection = () => {
   return (
     <Section>
       <SectionHeader title={t("success-header")} />
-      <DetailsCard product={product} />
+      <DetailsCard product={product} isComplete={isComplete} />
     </Section>
   );
 };

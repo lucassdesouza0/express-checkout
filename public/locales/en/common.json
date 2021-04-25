@@ -6,7 +6,7 @@
     "pre-checkout-header": "Now Please Select The Packing Size",
     "checkout-header": "Fill in Your Shipping Details",
     "success-header": "Your Order Is On Its Way!",
-    "packing-size": "Select a packing size",
+    "packing-size": "Select a packing size:",
     "shipping": "Go To Shipping",
     "confirm": "confirm information",
     "close": "Close order",

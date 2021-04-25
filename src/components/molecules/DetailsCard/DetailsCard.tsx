@@ -10,17 +10,16 @@ import { Card, Details, Shipping } from "./DetailsCard.styles";
 import { useTranslation } from "next-i18next";
 import { useRouter } from "next/dist/client/router";
 import Button from "components/atoms/Button/Button";
+import { useEffect } from "react";
 
 interface DetailsCardProps {
   product?: ProductProps;
+  isComplete?: boolean;
 }
 
-const DetailsCard = ({ product }: DetailsCardProps) => {
+const DetailsCard = ({ product, isComplete }: DetailsCardProps) => {
   const { t } = useTranslation("common");
   const router = useRouter();
-  const { productsContext, setProductsContext } = useContext(
-    ProductContext
-  ) as ContextType;
 
   if (!product) return <DetailsCardLoad />;
 
@@ -45,7 +44,7 @@ const DetailsCard = ({ product }: DetailsCardProps) => {
             </>
           )}
         </Shipping>
-        {productsContext?.product?.shipping && !productsContext?.isComplete && (
+        {product?.shipping && !isComplete && (
           <Button type="button" onClick={() => router.push("success")}>
             {t("close")}
           </Button>
