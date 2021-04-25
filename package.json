@@ -5,7 +5,7 @@
   "scripts": {
     "predev": "rm .env.production && cp .env.example .env.local",
     "dev": "next dev",
-    "prebuild": "cp .env.production.local .env.production",
+    "prebuild": "cp .env.production.example .env.production",
     "build": "next build",
     "start": "next start",
     "test": "jest --silent",
