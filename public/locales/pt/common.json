@@ -2,6 +2,8 @@
     "h1": "A Loja do Seu Cão!",
     "select": "selecionar",
     "buy": "comprar",
+    "sizes": "tamanhos",
+    "quantity": "quantidade",
     "product-list-header": "Escolha primeiro a ração preferida do seu cão:",
     "pre-checkout-header": "Agora, selecione  o tamanho da embalagem",
     "checkout-header": "Preencha Seus Sados de Envio",

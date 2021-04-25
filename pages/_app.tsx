@@ -10,6 +10,7 @@ export const ProductContext = React.createContext({});
 export interface SelectedProductProps {
   size?: string;
   price?: string;
+  quantity?: string;
 }
 
 export interface ProductProps {

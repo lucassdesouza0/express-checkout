@@ -2,6 +2,8 @@
     "h1": "Your Dog's Store!",
     "select": "select",
     "buy": "buy",
+    "sizes": "sizes",
+    "quantity": "quantity",
     "product-list-header": "First Your Dog's Favorite Dry Dog Food:",
     "pre-checkout-header": "Now Please Select The Packing Size",
     "checkout-header": "Fill in Your Shipping Details",

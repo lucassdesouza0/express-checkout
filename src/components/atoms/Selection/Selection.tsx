@@ -3,49 +3,50 @@ import React, { useContext, useEffect, useState } from "react";
 import { useTranslation } from "next-i18next";
 
 import { Section, SelectionSection, Select } from "./Selection.styles";
-import { ContextType, ProductContext, ProductProps } from "pages/_app";
+import {
+  ContextType,
+  ProductContext,
+  ProductProps,
+  SelectedProductProps,
+} from "pages/_app";
+import { Variant } from "@testing-library/react";
 
 interface SelectionProps {
   product?: ProductProps;
 }
 
 const Selection = ({ product }: SelectionProps) => {
-  const [size, setSize] = useState("");
-  const [price, setPrice] = useState("");
   const { productsContext, setProductsContext } = useContext(
     ProductContext
   ) as ContextType;
   const { t } = useTranslation("common");
+  const [details, setDetails] = useState<SelectedProductProps>({});
+  const [complete, setcomplete] = useState(false);
 
   const variants = product?.variants;
 
   useEffect(() => {
-    price &&
-      size &&
-      setProductsContext({
-        product: {
-          name: product?.name,
-          variants: product?.variants,
-          datail: { size: size, price: price },
-        },
-        products: productsContext.products,
-      });
-  }, [size, price]);
+    setProductsContext({
+      product: {
+        ...product,
+        datail: { size: details?.size, price: details?.price },
+      },
+      ...productsContext,
+    });
+  }, [complete]);
 
   function handleSizeChange(event: React.ChangeEvent<any>): void {
     const variant = variants?.[event.target.value];
-
-    if (variant) {
-      setSize(variant?.size);
-      setPrice(variant?.price);
-    }
+    setDetails({ size: variant?.size, price: variant?.price });
   }
+
+  function handleQuantityChange(event: React.ChangeEvent<any>): void {}
 
   return (
     <Section>
       <SelectionSection>
         <label>{t("packing-size")}:</label>
-        <Select name="ages" onChange={handleSizeChange} defaultValue={"sizes"}>
+        <Select name="sizes" onChange={handleSizeChange} defaultValue={"sizes"}>
           <option value="sizes" disabled data-testid="select-option">
             sizes
           </option>
@@ -60,6 +61,22 @@ const Selection = ({ product }: SelectionProps) => {
             </option>
           ))}
         </Select>
+        <form
+          name="quantity"
+          onChange={handleQuantityChange}
+          defaultValue={"sizes"}
+        >
+          <label htmlFor="quantity" data-testid="select-option">
+            quantity
+          </label>
+
+          <input
+            type="number"
+            name="quantity"
+            min="1"
+            onChange={handleQuantityChange}
+          />
+        </form>
       </SelectionSection>
     </Section>
   );

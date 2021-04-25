@@ -16,6 +16,8 @@
 - [**critical**] Some business rules are within components, which makes them bad to reuse.
   Along with the addition of the saga library, I would export this entire business rule not to mix responsibilities.
 
+- [**bug**][**critical**] Sometimes the checkout page fails to load the state of the context, I didn't succeed on troubleshooting it, but I verified that it occurs mostly in mobile browsers.
+
 ### Theming
 
 - It would be interesting to have a theme for the application, controlling the visual differences by encapsulating some css properties for a better control of the final result.
