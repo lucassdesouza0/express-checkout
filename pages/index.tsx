@@ -11,7 +11,7 @@ interface HomeProps {
   initialData: IProduct[];
 }
 
-export async function getServerSideProps({ locale }: any) {
+export async function getStaticProps({ locale }: any) {
   const data = await fetchProducts();
   return {
     props: {
