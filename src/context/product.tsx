@@ -1,5 +1,5 @@
 import React, { createContext, ReactNode, useState } from "react";
-import { VariantProp } from "services/products";
+import { IVariant } from "services/products";
 
 export interface SelectedProductProps {
   name?: string;
@@ -10,7 +10,7 @@ export interface SelectedProductProps {
 
 export interface StateProps {
   selectedProduct: SelectedProductProps | null;
-  variant?: VariantProp[] | null;
+  variant?: IVariant[] | null;
 }
 
 export interface ProductContextProps {

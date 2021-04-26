@@ -14,9 +14,5 @@ module.exports = {
     "^context/(.*)$": ["<rootDir>/src/context/$1"],
     "\\.(css|less|sass|scss)$": ["<rootDir>/src/tests/__mocks__/styles.ts"],
   },
-  collectCoverageFrom: [
-    "pages/**/*.{ts,jsx}",
-    "src/**/*.{ts,jsx}",
-    "!**/node_modules/**",
-  ],
+  collectCoverageFrom: ["src/**/*.{ts,jsx}", "!**/node_modules/**"],
 };

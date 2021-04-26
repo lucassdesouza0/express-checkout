@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { useTranslation } from "next-i18next";
 
-import { ProductProps } from "services/products";
+import { IProduct } from "services/products";
 import ProductCard from "molecules/ProductCard/ProductCard";
 import ProductCardLoading from "molecules/ProductCard/ProductCard.load";
 import SectionHeader from "atoms/SectionHeader/SectionHeader";
@@ -9,7 +9,7 @@ import SectionHeader from "atoms/SectionHeader/SectionHeader";
 import { List } from "./ProductsList.styles";
 
 interface ProductsListProps {
-  products?: ProductProps[] | null;
+  products?: IProduct[];
 }
 
 const ProductsList = ({ products }: ProductsListProps) => {

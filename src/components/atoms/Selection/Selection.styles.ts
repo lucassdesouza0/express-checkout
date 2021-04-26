@@ -8,10 +8,9 @@ export const Section = styled("div")`
 
 export const SelectionSection = styled("div")`
   display: flex;
-  flex-flow: row wrap;
-  flex-direction: row;
+  flex-flow: column wrap;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
   overflow-y: auto;
   padding: 10px;
 `;
@@ -23,13 +22,20 @@ export const Select = styled("select")`
   font-size: 16px;
   border: none;
   box-shadow: 2px 2px 10px 5px #eee;
-  margin: 0 10px;
+  margin: 10px 10px;
 
   :focus {
     outline: none;
   }
+`;
 
-  /* -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none; */
+export const Input = styled("input")`
+  padding: 10px;
+  border-radius: 5px;
+  background-color: ${(props) => (props.disabled ? "#dddddd" : "transparent")};
+  font-size: 16px;
+  border: none;
+  box-shadow: 2px 2px 10px 5px #eee;
+  margin: 0 10px;
+  max-width: 50px;
 `;

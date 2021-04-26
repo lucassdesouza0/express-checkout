@@ -7,16 +7,16 @@ exports[`<ProductCard /> it should match snapshot 1`] = `
     data-testid="variants-card"
   >
     <div
-      class="css-1px0wn7-Section eui42cl2"
+      class="css-1px0wn7-Section eui42cl3"
     >
       <div
-        class="css-1l33m80-SelectionSection eui42cl1"
+        class="css-16xtfp9-SelectionSection eui42cl2"
       >
         <label>
-          packing-size:
+          packing-size
         </label>
         <select
-          class="css-1nbhqyd-Select eui42cl0"
+          class="css-12mkdmf-Select eui42cl1"
           name="ages"
         >
           <option
@@ -49,19 +49,36 @@ exports[`<ProductCard /> it should match snapshot 1`] = `
             20kg
           </option>
         </select>
+        <form
+          name="quantity"
+        >
+          <input
+            class="css-1xpb5t7-Input eui42cl0"
+            disabled=""
+            min="1"
+            name="quantity"
+            type="number"
+          />
+          <label
+            data-testid="select-option"
+            for="quantity"
+          >
+            (unit)
+          </label>
+        </form>
+        <button
+          class="css-hhtkyx-Button enhitpr0"
+          name="button"
+          type="button"
+        >
+          <a
+            href="/checkout"
+          >
+            kart
+          </a>
+        </button>
       </div>
     </div>
-    <button
-      class="css-hhtkyx-Button enhitpr0"
-      name="button"
-      type="button"
-    >
-      <a
-        href="/checkout"
-      >
-        kart
-      </a>
-    </button>
   </div>
 </DocumentFragment>
 `;
@@ -73,16 +90,16 @@ exports[`<ProductCard /> it should render the load version of the card 1`] = `
     data-testid="variants-card"
   >
     <div
-      class="css-1px0wn7-Section eui42cl2"
+      class="css-1px0wn7-Section eui42cl3"
     >
       <div
-        class="css-1l33m80-SelectionSection eui42cl1"
+        class="css-16xtfp9-SelectionSection eui42cl2"
       >
         <label>
-          packing-size:
+          packing-size
         </label>
         <select
-          class="css-1nbhqyd-Select eui42cl0"
+          class="css-12mkdmf-Select eui42cl1"
           name="ages"
         >
           <option
@@ -94,19 +111,36 @@ exports[`<ProductCard /> it should render the load version of the card 1`] = `
             sizes
           </option>
         </select>
+        <form
+          name="quantity"
+        >
+          <input
+            class="css-1xpb5t7-Input eui42cl0"
+            disabled=""
+            min="1"
+            name="quantity"
+            type="number"
+          />
+          <label
+            data-testid="select-option"
+            for="quantity"
+          >
+            (unit)
+          </label>
+        </form>
+        <button
+          class="css-hhtkyx-Button enhitpr0"
+          name="button"
+          type="button"
+        >
+          <a
+            href="/checkout"
+          >
+            kart
+          </a>
+        </button>
       </div>
     </div>
-    <button
-      class="css-hhtkyx-Button enhitpr0"
-      name="button"
-      type="button"
-    >
-      <a
-        href="/checkout"
-      >
-        kart
-      </a>
-    </button>
   </div>
 </DocumentFragment>
 `;

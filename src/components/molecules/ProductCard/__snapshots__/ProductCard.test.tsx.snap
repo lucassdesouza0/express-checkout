@@ -25,7 +25,13 @@ exports[`<ProductCard /> it should match snapshot 1`] = `
       </p>
       <div
         class="css-1wmjec5-LowerPrice ek8h0p80"
-      />
+      >
+        <label
+          for=""
+        >
+          from
+        </label>
+      </div>
     </div>
     <button
       class="css-hhtkyx-Button enhitpr0"

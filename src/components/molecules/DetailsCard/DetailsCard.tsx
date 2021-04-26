@@ -1,19 +1,17 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
+import { useTranslation } from "next-i18next";
+import { useRouter } from "next/dist/client/router";
+import { OrderProps } from "pages/_app";
 
 import Image from "atoms/Image/Image";
 import Price from "atoms/Price/Price";
-import { ContextType, ProductContext, ProductProps } from "pages/_app";
-
+import Button from "components/atoms/Button/Button";
 import DetailsCardLoad from "./DetailsCard.load";
 
 import { Card, Details, Shipping } from "./DetailsCard.styles";
-import { useTranslation } from "next-i18next";
-import { useRouter } from "next/dist/client/router";
-import Button from "components/atoms/Button/Button";
-import { useEffect } from "react";
 
 interface DetailsCardProps {
-  product?: ProductProps;
+  product?: OrderProps;
   isComplete?: boolean;
 }
 

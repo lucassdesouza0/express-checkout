@@ -28,9 +28,8 @@ const CheckoutSection = () => {
       <Section>
         {!productsContext?.product?.shipping &&
           !productsContext?.isComplete && <Form />}
-        {productsContext?.product && (
-          <DetailsCard product={productsContext.product} />
-        )}
+
+        <DetailsCard product={productsContext?.product} />
       </Section>
     </CheckoutContainer>
   );

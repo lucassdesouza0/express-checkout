@@ -3,8 +3,6 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import CheckoutSection from "organisms/CheckoutSection/CheckoutSection";
 import Header from "atoms/Header/Header";
 
-interface CheckoutProps {}
-
 export async function getStaticProps({ locale, pr }: any) {
   return {
     props: {
@@ -13,7 +11,7 @@ export async function getStaticProps({ locale, pr }: any) {
   };
 }
 
-const Checkout = ({}: CheckoutProps) => {
+const Checkout = () => {
   return (
     <>
       <Header />

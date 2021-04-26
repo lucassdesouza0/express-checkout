@@ -3,38 +3,35 @@ import type { AppProps } from "next/app";
 import { appWithTranslation } from "next-i18next";
 
 import "../styles/globals.css";
-import { VariantProp } from "services/products";
+import { IVariant, IProduct } from "services/products";
 
 export const ProductContext = React.createContext({});
 
-export interface SelectedProductProps {
+export interface DetailsProps {
   size?: string;
-  price?: string;
-  quantity?: string;
+  price?: number;
+  quantity?: number;
 }
 
-export interface ProductProps {
+export interface ShippingProps {
+  name: string;
+  email: string;
+  address: string;
+  postalCode: string;
+  country: string;
+  phone: string;
+}
+
+export interface OrderProps {
   name?: string;
-  datail?: SelectedProductProps;
-  variants?: VariantProp[] | null;
-  shipping?: {
-    name: string;
-    email: string;
-    address: string;
-    postalCode: string;
-    country: string;
-    phone: string;
-  };
+  datail?: DetailsProps;
+  variants?: IVariant[];
+  shipping?: ShippingProps;
 }
 
 export interface ContextProps {
-  products:
-    | {
-        name: string;
-        variants: VariantProp[];
-      }[]
-    | null;
-  product?: ProductProps;
+  products?: IProduct[];
+  product?: OrderProps;
   isComplete?: boolean;
 }
 
@@ -44,10 +41,7 @@ export interface ContextType {
 }
 
 function MyApp({ Component, pageProps, ...props }: AppProps) {
-  const [productsContext, setProductsContext] = useState<ContextProps>({
-    products: null,
-    product: undefined,
-  });
+  const [productsContext, setProductsContext] = useState<ContextProps>({});
 
   return (
     <ProductContext.Provider value={{ productsContext, setProductsContext }}>

@@ -1,16 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useTranslation } from "next-i18next";
+import { OrderProps } from "pages/_app";
 
 import SectionHeader from "atoms/SectionHeader/SectionHeader";
 import DetailsCard from "molecules/DetailsCard/DetailsCard";
 import VariantsCard from "molecules/VariantsCard/VariantsCard";
-import { ProductContext, ProductProps } from "pages/_app";
 
 import { PreCheckoutContainer, Section } from "./PreCheckout.styles";
-import { useEffect } from "react";
 
 export interface PreCheckoutProps {
-  product?: ProductProps;
+  product?: OrderProps;
 }
 
 const PreCheckout = ({ product }: PreCheckoutProps) => {

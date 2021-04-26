@@ -1,32 +1,39 @@
 import Head from "next/head";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
-import fetchProducts, { ProductProps } from "services/products";
+import fetchProducts, { IProduct } from "services/products";
 
 import Header from "atoms/Header/Header";
 import ProductsSection from "organisms/ProductsSection/ProductsSection";
+import useProduct from "hooks/useProduct";
 interface HomeProps {
-  products: ProductProps[];
+  products: IProduct[];
+  initialData: IProduct[];
 }
 
-export async function getStaticProps({ locale, ...props }: any) {
-  const products = await fetchProducts();
+export async function getServerSideProps({ locale }: any) {
+  const data = await fetchProducts();
   return {
     props: {
-      products: products,
+      initialData: data,
       ...(await serverSideTranslations(locale, ["common", "price"])),
     },
   };
 }
 
-const Home = ({ products }: HomeProps) => {
+const Home = ({ initialData }: HomeProps) => {
+  const { data } = useProduct({
+    url: "api/products",
+    initialData: initialData,
+  });
+
   return (
     <>
       <Head>
         <title>Your Dog's Store</title>
       </Head>
       <Header />
-      <ProductsSection products={products} />
+      <ProductsSection products={data} />
     </>
   );
 };
