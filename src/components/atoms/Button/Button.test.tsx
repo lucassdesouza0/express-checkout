@@ -16,14 +16,6 @@ describe("Button", () => {
     expect(button).toBeInTheDocument();
   });
 
-  test("it should render the load version of the card", () => {
-    const innerText = "test button";
-    testRender(<Button>{innerText}</Button>);
-
-    const button = screen.getByRole("button");
-    expect(button).toHaveTextContent(innerText);
-  });
-
   test("it should match snapshot", () => {
     const { asFragment } = render(<Button></Button>);
     expect(asFragment()).toMatchSnapshot();
