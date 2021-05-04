@@ -1,6 +1,5 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext, useState } from "react";
 import Link from "next/link";
-import { useRouter } from "next/router";
 import { IProduct, IVariant } from "services/products";
 import { useTranslation, Trans } from "next-i18next";
 
@@ -8,8 +7,6 @@ import Button from "atoms/Button/Button";
 import Image from "atoms/Image/Image";
 import Price from "atoms/Price/Price";
 import { ContextType, ProductContext } from "pages/_app";
-
-import ProductCardLoad from "./ProductCard.load";
 
 import { Card, Details, ProductName, LowerPrice } from "./ProductCard.styles";
 import { getLowestPrice } from "utils/price/price";
@@ -19,15 +16,12 @@ interface ProductCardProps {
 }
 
 const ProductCard = ({ product }: ProductCardProps) => {
-  const router = useRouter();
   const { t, ready } = useTranslation("common", { useSuspense: true });
   const { productsContext, setProductsContext } = useContext(
     ProductContext
   ) as ContextType;
 
-  if (!product) return <ProductCardLoad />;
-
-  const { name } = product;
+  const { name, variants } = product!!;
   const [selected, setSelected] = useState(false);
 
   function selectProduct(product: IProduct) {
@@ -60,12 +54,12 @@ const ProductCard = ({ product }: ProductCardProps) => {
         </ProductName>
         <LowerPrice>
           <label htmlFor="">{t("from")}</label>
-          <Price value={lowestPrice(product.variants)} />
+          <Price value={lowestPrice(variants)} />
         </LowerPrice>
       </Details>
 
-      <Button type="button" onClick={() => selectProduct(product)}>
-        <a href="#pre-checkout">{t("select")}</a>
+      <Button type="button" onClick={() => selectProduct(product!!)}>
+        <Link href="#pre-checkout">{t("select")}</Link>
       </Button>
     </Card>
   );

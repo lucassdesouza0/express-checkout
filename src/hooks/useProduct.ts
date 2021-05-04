@@ -3,11 +3,11 @@ import fetchProducts from "services/products";
 
 interface useProductProps {
   url: string;
-  initialData: any;
+  initialData?: any;
 }
 
-const useProduct = ({ url }: useProductProps) => {
-  const response = useSWR(url, fetchProducts);
+const useProduct = ({ url, initialData }: useProductProps) => {
+  const response = useSWR(url, fetchProducts, initialData);
 
   return response;
 };

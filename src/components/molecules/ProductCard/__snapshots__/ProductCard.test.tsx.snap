@@ -39,7 +39,7 @@ exports[`<ProductCard /> it should match snapshot 1`] = `
       type="button"
     >
       <a
-        href="#pre-checkout"
+        href="/#pre-checkout"
       >
         select
       </a>

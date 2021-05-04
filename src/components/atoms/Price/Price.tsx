@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import { useTranslation } from "next-i18next";
 
 interface PriceProps {
@@ -12,4 +12,4 @@ const Price = ({ value }: PriceProps) => {
   return <>{ready && price}</>;
 };
 
-export default Price;
+export default memo(Price);
