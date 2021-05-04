@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button it should match snapshot 1`] = `
+<DocumentFragment>
+  <h1
+    class="css-1oj4qtz-Text eyoz9500"
+  >
+    404 - Page Not Found
+  </h1>
+</DocumentFragment>
+`;

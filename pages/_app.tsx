@@ -1,8 +1,7 @@
-import React, { useState } from "react";
-import type { AppProps } from "next/app";
-import { appWithTranslation } from "next-i18next";
-
 import "../styles/globals.css";
+import { appWithTranslation } from "next-i18next";
+import type { AppProps } from "next/app";
+import React, { useState } from "react";
 import { IVariant, IProduct } from "services/products";
 
 export const ProductContext = React.createContext({});

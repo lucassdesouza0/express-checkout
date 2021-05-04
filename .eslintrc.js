@@ -20,7 +20,6 @@ module.exports = {
     "*.stories.ts",
     ".storybook/*",
   ],
-  plugin: ["testing-library", "jest-dom"],
   extends: [
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
@@ -31,31 +30,19 @@ module.exports = {
     "plugin:import/errors",
     "plugin:import/warnings",
     "plugin:import/typescript",
-    "plugin:import",
     "plugin:jest-dom/recommended",
   ],
+  plugins: ["import", "testing-library", "jest-dom"],
   overrides: [
     {
       files: ["**/*.ts", "**/*.tsx"],
       parser: "@babel/eslint-parser",
-      settings: {
-        "import/extensions": [".js", ".jsx", ".ts", ".tsx"],
-        "import/parsers": {
-          "@typescript-eslint/parser": [".ts", ".tsx"],
-        },
-        "import/resolver": {
-          typescript: {
-            alwaysTryTypes: true,
-          },
-        },
-        react: { version: "detect" },
-      },
       rules: {
         "react/prop-types": "off",
         "react/react-in-jsx-scope": "off",
         "jsx-a11y/anchor-is-valid": "off",
         "no-unused-vars": "off",
-        "@typescript-eslint/no-unused-vars": ["warning"],
+        "@typescript-eslint/no-unused-vars": ["warn"],
         "@typescript-eslint/explicit-function-return-type": [
           "warn",
           {
@@ -83,6 +70,26 @@ module.exports = {
             paths: ["src"],
           },
         },
+        "import/extensions": [".ts", ".tsx"],
+        "import/order": [
+          "error",
+          {
+            groups: ["builtin", "external", "internal"],
+            pathGroups: [
+              {
+                pattern: "react",
+                group: "external",
+                position: "before",
+              },
+            ],
+            pathGroupsExcludedImportTypes: ["react"],
+            "newlines-between": "always",
+            alphabetize: {
+              order: "asc",
+              caseInsensitive: true,
+            },
+          },
+        ],
       },
     },
   ],

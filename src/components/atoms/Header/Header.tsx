@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import { useTranslation } from "next-i18next";
 
 import { SHeader, Title } from "./Header.styles";
@@ -12,4 +12,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default memo(Header);

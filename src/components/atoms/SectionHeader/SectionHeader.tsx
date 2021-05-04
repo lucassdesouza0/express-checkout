@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { memo } from "react";
 
 import { Header } from "./SectionHeader.styles";
 
@@ -10,4 +10,4 @@ const SectionHeader = ({ title }: SectionHeaderProps) => {
   return <Header>{title}</Header>;
 };
 
-export default SectionHeader;
+export default memo(SectionHeader);

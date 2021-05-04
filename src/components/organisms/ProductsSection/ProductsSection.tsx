@@ -1,12 +1,13 @@
 import React, { useContext, useEffect } from "react";
+import dynamic from "next/dynamic";
 import { useTranslation } from "next-i18next";
 
 import { ContextType, ProductContext } from "pages/_app";
 import { IProduct } from "services/products";
 
 import ProductsList from "molecules/ProductsList/ProductsList";
-import PreCheckout from "molecules/PreCheckout/PreCheckout";
 import SectionHeader from "atoms/SectionHeader/SectionHeader";
+const PreCheckout = dynamic(() => import("molecules/PreCheckout/PreCheckout"));
 
 import { Section } from "./ProductsSection.styles";
 

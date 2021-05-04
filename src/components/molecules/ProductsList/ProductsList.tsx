@@ -1,10 +1,12 @@
 import React, { useContext } from "react";
+import dynamic from "next/dynamic";
 import { useTranslation } from "next-i18next";
 
 import { IProduct } from "services/products";
 import ProductCard from "molecules/ProductCard/ProductCard";
-import ProductCardLoading from "molecules/ProductCard/ProductCard.load";
-import SectionHeader from "atoms/SectionHeader/SectionHeader";
+const ProductCardLoading = dynamic(
+  () => import("molecules/ProductCard/ProductCard.load")
+);
 
 import { List } from "./ProductsList.styles";
 
